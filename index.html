@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo Application</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+</head>
+<body>
+    <div class="title"><h1>Todo App with FireBase</h1></div>
+    <div id="main">
+        <h2 class="heading">Todo Application</h2>
+        <div>
+            <input type="text" id="item" placeholder="Add your Todo"> <br>
+            <button onclick="addtodo()" class="addButton"><i class="fas fa-plus"></i></button>
+            <button onclick="deleteAlltodo()" class="delAllButton">Clear All</button>
+        </div>
+        <div id="content">
+            <table id="table" cellpadding="4px">
+            </table>
+            
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
